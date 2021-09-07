@@ -1,0 +1,76 @@
+:root {
+  --light-grey: #ddd;
+  --dark-grey: #aaa;
+  --radius: 8px;
+}
+table {
+  min-width: 600px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: sans-serif;
+}
+th, td {
+  vertical-align: middle;
+  padding: 5px;
+}
+thead th {
+  color: white;
+}
+thead td{
+  color: rgb(34, 34, 34)
+}
+tfoot button{
+  padding: 5px 10px;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+thead th p:nth-child(2){
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 15px;
+}
+tbody td:first-child {
+  text-align-last: left;
+  padding-left: 20px;
+}
+thead th:not(:first-child){
+  width: 17%;
+}
+thead th:first-child {
+  border-top-left-radius: var(--radius);
+  background-color: rgb(144, 144, 214);
+  font-weight: bolder;
+  }
+thead th:last-child {
+  border-top-right-radius: var(--radius);
+  background-color: rgb(56, 56, 207);
+}
+thead th:nth-child(2) {
+  background-color: rgb(127, 127, 214);
+}
+thead th:nth-child(3) {
+  background-color: rgb(108, 108, 211);
+}
+thead th:nth-child(4) {
+  background-color: rgb(92, 92, 209);
+}
+tfoot td:first-child {
+  border-bottom-left-radius: var(--radius);
+}
+tfoot td:last-child {
+  border-bottom-right-radius: var(--radius);
+}
+tbody tr:nth-child(odd) td:nth-child(odd),
+tfoot td:nth-child(odd) {
+  background-color: var(--dark-grey);
+}
+tbody tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd),
+tfoot td:nth-child(even) {
+  background-color: var(--light-grey);
+}
+
